@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript">
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
+      } else {
+        document.write('<meta name="viewport" content="width=1170">');
+      }
+    </script>
+    <title>Index Page</title>
+  </head>
+  <body>
+    <%= require('html-loader!./../includes/header.html') %>
+    <div class="container">catalog.html страница.</div>
+
+    <%= require('html-loader!./../includes/footer.html') %>
+  </body>
+</html>
